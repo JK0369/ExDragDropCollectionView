@@ -13,9 +13,16 @@
 		4A92A090279195B3008F6642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A92A08E279195B3008F6642 /* Main.storyboard */; };
 		4A92A092279195B4008F6642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A92A091279195B4008F6642 /* Assets.xcassets */; };
 		4A92A095279195B4008F6642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A92A093279195B4008F6642 /* LaunchScreen.storyboard */; };
+		4A92A09D27919689008F6642 /* DragDropCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92A09C27919689008F6642 /* DragDropCollectionView.swift */; };
+		4A92A09F279199CB008F6642 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92A09E279199CB008F6642 /* MyCell.swift */; };
+		4A92A0A127919A53008F6642 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92A0A027919A53008F6642 /* Mock.swift */; };
+		4A92A0A327919F95008F6642 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92A0A227919F95008F6642 /* MyView.swift */; };
+		D74F5BDDD2B079D230D89861 /* Pods_ExDragDropCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CD120E372D43276EE81783 /* Pods_ExDragDropCollectionView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10E8E4ED36C8C46D9937C311 /* Pods-ExDragDropCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDragDropCollectionView.release.xcconfig"; path = "Target Support Files/Pods-ExDragDropCollectionView/Pods-ExDragDropCollectionView.release.xcconfig"; sourceTree = "<group>"; };
+		338CA641213DA2DB999A04D0 /* Pods-ExDragDropCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDragDropCollectionView.debug.xcconfig"; path = "Target Support Files/Pods-ExDragDropCollectionView/Pods-ExDragDropCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		4A92A085279195B3008F6642 /* ExDragDropCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExDragDropCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A92A088279195B3008F6642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A92A08A279195B3008F6642 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		4A92A091279195B4008F6642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A92A094279195B4008F6642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A92A096279195B4008F6642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A92A09C27919689008F6642 /* DragDropCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropCollectionView.swift; sourceTree = "<group>"; };
+		4A92A09E279199CB008F6642 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		4A92A0A027919A53008F6642 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		4A92A0A227919F95008F6642 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		F9CD120E372D43276EE81783 /* Pods_ExDragDropCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDragDropCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74F5BDDD2B079D230D89861 /* Pods_ExDragDropCollectionView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27A1392346AC394DAC782B58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9CD120E372D43276EE81783 /* Pods_ExDragDropCollectionView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35037D63C2610E0F30022134 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				338CA641213DA2DB999A04D0 /* Pods-ExDragDropCollectionView.debug.xcconfig */,
+				10E8E4ED36C8C46D9937C311 /* Pods-ExDragDropCollectionView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4A92A07C279195B3008F6642 = {
 			isa = PBXGroup;
 			children = (
 				4A92A087279195B3008F6642 /* ExDragDropCollectionView */,
 				4A92A086279195B3008F6642 /* Products */,
+				35037D63C2610E0F30022134 /* Pods */,
+				27A1392346AC394DAC782B58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +91,10 @@
 				4A92A088279195B3008F6642 /* AppDelegate.swift */,
 				4A92A08A279195B3008F6642 /* SceneDelegate.swift */,
 				4A92A08C279195B3008F6642 /* ViewController.swift */,
+				4A92A0A227919F95008F6642 /* MyView.swift */,
+				4A92A0A027919A53008F6642 /* Mock.swift */,
+				4A92A09C27919689008F6642 /* DragDropCollectionView.swift */,
+				4A92A09E279199CB008F6642 /* MyCell.swift */,
 				4A92A08E279195B3008F6642 /* Main.storyboard */,
 				4A92A091279195B4008F6642 /* Assets.xcassets */,
 				4A92A093279195B4008F6642 /* LaunchScreen.storyboard */,
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A92A099279195B4008F6642 /* Build configuration list for PBXNativeTarget "ExDragDropCollectionView" */;
 			buildPhases = (
+				25070872983D06E9C3322413 /* [CP] Check Pods Manifest.lock */,
 				4A92A081279195B3008F6642 /* Sources */,
 				4A92A082279195B3008F6642 /* Frameworks */,
 				4A92A083279195B3008F6642 /* Resources */,
+				2F4CEB175B3C0018BE2D1208 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +171,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25070872983D06E9C3322413 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExDragDropCollectionView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F4CEB175B3C0018BE2D1208 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExDragDropCollectionView/Pods-ExDragDropCollectionView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExDragDropCollectionView/Pods-ExDragDropCollectionView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExDragDropCollectionView/Pods-ExDragDropCollectionView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A92A081279195B3008F6642 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A92A0A327919F95008F6642 /* MyView.swift in Sources */,
 				4A92A08D279195B3008F6642 /* ViewController.swift in Sources */,
+				4A92A09F279199CB008F6642 /* MyCell.swift in Sources */,
+				4A92A09D27919689008F6642 /* DragDropCollectionView.swift in Sources */,
 				4A92A089279195B3008F6642 /* AppDelegate.swift in Sources */,
 				4A92A08B279195B3008F6642 /* SceneDelegate.swift in Sources */,
+				4A92A0A127919A53008F6642 /* Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +368,7 @@
 		};
 		4A92A09A279195B4008F6642 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 338CA641213DA2DB999A04D0 /* Pods-ExDragDropCollectionView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +397,7 @@
 		};
 		4A92A09B279195B4008F6642 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10E8E4ED36C8C46D9937C311 /* Pods-ExDragDropCollectionView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
